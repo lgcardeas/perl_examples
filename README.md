@@ -1,6 +1,6 @@
 # perl_examples
 
-I going to resume some aspect of Perl Language. To help anybody who wants to learn Perl. I hope this will be right for you. Using examples I'll show you how to use it.
+I'm going to resume some aspect of Perl Language. To help anybody who wants to learn Perl. I hope this will be right for you. Using examples I'll show you how to use it.
 
 
 -------------------------------------http://perldoc.perl.org/perl.html------------------------------------------
@@ -13,5 +13,8 @@ Perl's roots in text processing haven't been forgotten over the years. It still 
 -------------------------------------http://perldoc.perl.org/perl.html------------------------------------------
 
 
-
+-------------------------------------http://perldoc.perl.org/perlinterp.html------------------------------------
+INTERPRETER
+The work of the interpreter has two main stages: compiling the code into the internal representation, or bytecode, and then executing it.
+-------------------------------------http://perldoc.perl.org/perlinterp.html------------------------------------
 
