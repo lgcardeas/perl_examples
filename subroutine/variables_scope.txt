@@ -1,0 +1,38 @@
+https://www.tutorialspoint.com/perl/perl_subroutines.htm
+
+This file is just for information... I'm going to talk about the scope of the variables in Perl. In Perl by default
+all variables are global. But we can specific how we're going to treat it.
+
+    ***If we use "my" before a variable (my $name_variable). We're telling to the compiler that all the modifications 
+to this variable only will be access to its data in this fragment of code( Between curly braces). Ex:
+Inside a function.
+Inside a Loop.
+Inside a if statement.
+etc.
+
+    ***If we use "local" before a variable(local $name_variable). We are telling to the compiler start this point,
+the modifications to this varible can be access only by the subroutines. ex: https://www.tutorialspoint.com/perl/perl_subroutines.htm
+#!/usr/bin/perl
+
+# Global variable
+$string = "Hello, World!";
+
+sub PrintHello{
+   # Private variable for PrintHello function
+   local $string;
+   $string = "Hello, Perl!";
+   PrintMe();
+   print "Inside the function PrintHello $string\n";
+}
+sub PrintMe{
+   print "Inside the function PrintMe $string\n";
+}
+
+# Function call
+PrintHello();
+print "Outside the function $string\n";
+
+    ***If we type state before a variable (state $name_variable). We're telling to the compiler, that this variable is
+like when we use "local" but the variable is going to be initialized only one time and it's going to persist its data at 
+each point;
+
